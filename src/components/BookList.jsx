@@ -3,9 +3,10 @@ import Book from './Book'
 import { } from '../css/Book.css'
 
 function BookList(props) {
-    const { books } = props
+    const { books, bookClass } = props
+
     return(
-        <ul className="book-list">
+        <ul className={"book-list " + bookClass }>
             {
                 books.map((book => {
                     return (<Book key={book.id} book={book} />)

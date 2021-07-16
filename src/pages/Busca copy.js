@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import { searchApi } from "../components/api"
 
+import HeaderBusca from "../components/HeaderBusca";
 import BookList from '../components/BookList';
 
 function Busca() {
+  const { searchParams } = useParams()
   const [books, setBooks] = useState([])
   const [searchBox, setSearchBox] = useState("")
-  const [searchValue, setSearchValue] = useState("")
+  const [searchValue, setSearchValue] = useState(searchParams)
   const [filter, setFilter] = useState("")
 
   useEffect(() => {
@@ -39,7 +42,7 @@ function Busca() {
 
   return (
     <>
-      <h1>Google Books</h1>
+      <HeaderBusca />
       <div>
         <form name="filtro">
           <p>Filtro</p>
@@ -49,6 +52,7 @@ function Busca() {
           <label>Autor</label><br />
           <input type="radio" name="search_filter" value="title" onChange={handleFilterRadio} />
           <label>Título</label><br />
+          <button>Filtar agora</button>
         </form>
       </div>
 
@@ -57,7 +61,7 @@ function Busca() {
           onChange={handleSearchChange} placeholder="Busca..." />
         <button type="submit" onClick={handleSubmit}>Enviar</button>
       </form>
-      <BookList books={books} />
+      <BookList books={books} bookClass="flex-wrap" />
 
     </>
   )
