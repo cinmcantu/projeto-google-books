@@ -1,5 +1,5 @@
 import React from 'react';
-import { } from '../css/Book.css'
+import { } from '../styles/Book.css'
 
 function Book(props) {
     const { book } = props

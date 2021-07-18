@@ -31,3 +31,6 @@ Abra o terminal (Linux/Mac) ou o PowerShell (Windowns) e siga os passos abaixo.
 
 * ### React Router
     Biblioteca utilizada para criar rotas e navegar entre as páginas. <https://www.npmjs.com/package/react-router-dom>
+
+* ### Styled Components
+    Biblioteca utilizada estilar componentes do React usando Javascript (CSS-in-JS). <https://styled-components.com/>

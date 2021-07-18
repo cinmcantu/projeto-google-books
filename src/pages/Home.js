@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { searchApi } from "../api"
 import BookSection from '../components/BookSection';
 import Header from '../components/Header';
-import { } from '../css/Book.css'
+import { } from '../styles/Book.css'
 
 
 

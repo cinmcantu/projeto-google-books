@@ -1,7 +1,7 @@
 import React from 'react';
 import * as BSIcons from "react-icons/bs";
 import { Link } from 'react-router-dom';
-import { } from '../css/Book.css'
+import { } from '../styles/Book.css'
 
 function HeaderBusca() {
 
