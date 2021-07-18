@@ -33,3 +33,22 @@ export const Bookshelf = styled.div`
         font-size: 1.3rem;
     }
 `
+export const Load = styled.div`
+    padding-top: 20px;
+    margin: 20px 0;
+    .load-title{
+        height: 30px;
+        width: 400px;
+        background-color: #F3F6FD;
+    }
+    .load-shelf{
+        display: flex;
+
+    }
+    .load-book{
+        margin: 20px 5px;
+        height: 190px;
+        width: 130px;
+        background-color: #F3F6FD;
+    }
+`
