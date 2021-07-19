@@ -5,7 +5,7 @@ import { } from '../styles/Book.css'
 
 function HeaderBusca() {
 
-    return(
+    return (
         <>
             <header className="center" >
                 <Link to="/">

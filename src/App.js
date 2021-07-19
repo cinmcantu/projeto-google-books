@@ -7,7 +7,6 @@ import {
 
 import Busca from './pages/Busca';
 import Home from './pages/Home';
-import Header from './components/Header';
 
 function App() {
 
@@ -16,11 +15,11 @@ function App() {
       <Router>
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route exact path='/busca/' component={Busca} /> 
-          <Route path='/busca/:searchParams' component={Busca} /> 
+          <Route exact path='/busca/' component={Busca} />
+          <Route path='/busca/:searchParams/:pageNum' component={Busca} />
         </Switch>
       </Router>
-      
+
     </>
   )
 }

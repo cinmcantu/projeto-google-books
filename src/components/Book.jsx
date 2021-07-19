@@ -7,15 +7,15 @@ function Book(props) {
     if (book.volumeInfo.imageLinks) {
         image = book.volumeInfo.imageLinks.thumbnail
     }
-    return(
+    return (
         <>
-        {
-            image !== "" &&
-            (<li>
-                <img className="book-image" src={image} alt=""/><br />
-                <p className="book-title">{book.volumeInfo.title}</p>
-            </li>) 
-        }
+            {
+                image !== "" &&
+                (<li>
+                    <img className="book-image" src={image} alt="" /><br />
+                    <p className="book-title">{book.volumeInfo.title}</p>
+                </li>)
+            }
         </>
     )
 }

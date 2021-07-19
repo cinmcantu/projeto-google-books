@@ -14,18 +14,18 @@ export default function SearchFilterBtn(props) {
     return (
         <div className="btn">
             <ButtonBlue display="flex"
-                        bgcolor="#56C8FF"
-                        txtcolor="#FFF"
-                        onClick={showFilterBar}>
-                 <HIIcons.HiOutlineFilter />  Filtrar
+                bgcolor="#56C8FF"
+                txtcolor="#FFF"
+                onClick={showFilterBar}>
+                <HIIcons.HiOutlineFilter />  Filtrar
             </ButtonBlue>
             <ButtonBlue display={isFiltered ? "flex" : "none"}
-                        bgcolor="#EFFAFF"
-                        txtcolor="#595A5C"
-                        onClick={cleanFilter}>
+                bgcolor="#EFFAFF"
+                txtcolor="#595A5C"
+                onClick={cleanFilter}>
                 Limpar <BSIcons.BsX />
             </ButtonBlue>
-            
+
         </div>
     )
 }

@@ -20,7 +20,9 @@ function Home() {
     }, [])
 
     async function fetchData(searchValue, setLista) {
-        const booksApi = await searchApi(searchValue)
+        const offset = 0
+        const limit = 7
+        const booksApi = await searchApi(searchValue, offset, limit)
         setLista(booksApi.items)
         setIsLoad(true)
     }
@@ -37,14 +39,10 @@ function Home() {
                         <BookSection section="Ação" list={acao} />
                     </>
                 ) : (
-                    <>
-                        <Loading />
-                        <Loading />
-                        <Loading />
-                        <Loading />
-                    </>
+                    Array(4).fill(0).map((_, i) => {
+                        return <Loading key={i} />
+                    })
                 )
-                
                 }
             </main>
         </>

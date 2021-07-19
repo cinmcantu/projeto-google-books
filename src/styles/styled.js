@@ -23,10 +23,10 @@ export const ButtonBlue = styled.button`
 
 export const Bookshelf = styled.div`
     padding-top: 20px;
-    background-color: ${props=>props.data.bg};
-    color: ${props=>props.data.txtColor};
+    background-color: ${props => props.data.bg};
+    color: ${props => props.data.txtColor};
     &:hover{
-        background-color: ${props=>props.data.bgHover};
+        background-color: ${props => props.data.bgHover};
     }
     h1{
         padding-left: 20px;
@@ -50,5 +50,25 @@ export const Load = styled.div`
         height: 190px;
         width: 130px;
         background-color: #F3F6FD;
+    }
+`
+
+export const PagesBoxes = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5F5F5;
+    border: 1px solid #E5E5E5;
+    color: #555555;
+    padding: 2px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    margin: 0 7px;
+    font-size: 1rem;
+    &:hover{
+        background-color: #167ABC;
+        border: 1px solid #167ABC;
+        color: #fff;
     }
 `

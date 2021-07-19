@@ -2,9 +2,7 @@ import React from 'react';
 import { } from '../styles/Book.css'
 import { Load } from '../styles/styled'
 
-function Loading(props) {
-    const { section, list, destaque } = props
-
+function Loading() {
     return (
         <Load>
             <div className="load-title"></div>
